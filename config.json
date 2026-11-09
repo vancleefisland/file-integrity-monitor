@@ -1,0 +1,30 @@
+{
+  "protected_root": "protected",
+  "exclusions": [
+    "**/*.tmp",
+    "**/__pycache__/**",
+    "**/~$*"
+  ],
+  "chunk_size_bytes": 1048576,
+  "debounce_seconds": 0.15,
+  "reconcile_interval_seconds": 5,
+  "baseline_path": "baseline.json",
+  "alert_path": "alerts.jsonl",
+  "rules": {
+    "FILE_ADDED": {
+      "id": "FIM-001",
+      "name": "Protected file added",
+      "severity": "HIGH"
+    },
+    "CONTENT_MODIFIED": {
+      "id": "FIM-002",
+      "name": "Protected file content changed",
+      "severity": "HIGH"
+    },
+    "FILE_DELETED": {
+      "id": "FIM-003",
+      "name": "Protected file deleted",
+      "severity": "HIGH"
+    }
+  }
+}

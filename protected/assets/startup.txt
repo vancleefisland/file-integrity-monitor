@@ -1,0 +1,1 @@
+Harmless startup policy fixture. No executable code.
